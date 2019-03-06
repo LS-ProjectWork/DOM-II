@@ -30,3 +30,11 @@ const allText = document.querySelector("body");
 allText.addEventListener("copy", function(event) {
     event.target.style.color = "yellow";
 })
+
+window.addEventListener("resize", function() {
+    alert("the window size has changed.")
+})
+
+window.addEventListener("wheel", function(e) {
+    e.target.visibility = "hidden";
+});
