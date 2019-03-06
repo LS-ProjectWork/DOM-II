@@ -18,7 +18,10 @@ pageContent.forEach(function(currentValue) {
     });
 });
 
-window.addEventListener("keypress", function(e) {
-    alert("Hey, you pressed a key!");
+window.addEventListener("keypress", function() {
+    // alert("Hey, you pressed a key!");
 });
 
+window.addEventListener("load", function() {
+    console.log("The resources have finished loading.")
+});
