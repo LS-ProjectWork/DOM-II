@@ -19,9 +19,14 @@ pageContent.forEach(function(currentValue) {
 });
 
 window.addEventListener("keypress", function() {
-    // alert("Hey, you pressed a key!");
+    // console.log("Someone pressed a key!");
 });
 
 window.addEventListener("load", function() {
     console.log("The resources have finished loading.")
 });
+
+const allText = document.querySelector("body");
+allText.addEventListener("copy", function(event) {
+    event.target.style.color = "yellow";
+})
