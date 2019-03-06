@@ -3,7 +3,6 @@ const colorChange = document.querySelector(".footer");
 colorChange.addEventListener("mouseover", function(e) {
     e.target.style.color = "crimson";
 })
-console.log(colorChange);
 
 const btn = document.querySelectorAll(".btn");
 btn.forEach(function(currentValue) {
@@ -11,3 +10,15 @@ btn.forEach(function(currentValue) {
         e.target.style.backgroundColor = "blue";
     });
 });
+
+const pageContent = document.querySelectorAll("p");
+pageContent.forEach(function(currentValue) {
+    currentValue.addEventListener("click", function(e) {
+        e.target.style.color = "purple";
+    });
+});
+
+window.addEventListener("keypress", function(e) {
+    alert("Hey, you pressed a key!");
+});
+
