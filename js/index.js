@@ -5,3 +5,9 @@ colorChange.addEventListener("mouseover", function(e) {
 })
 console.log(colorChange);
 
+const btn = document.querySelectorAll(".btn");
+btn.forEach(function(currentValue) {
+    currentValue.addEventListener("dblclick", function(e) {
+        e.target.style.backgroundColor = "blue";
+    });
+});
